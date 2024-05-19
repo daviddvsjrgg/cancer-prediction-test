@@ -25,7 +25,7 @@ const routes = [
 
 async function getAllDataFromFirestore(request, h) {
   try {
-    const collectionRef = firestore.collection('prediction');
+    const collectionRef = firestore.collection('predictions');
     const snapshot = await collectionRef.get();
 
     const data = [];
